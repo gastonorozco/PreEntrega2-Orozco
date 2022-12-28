@@ -1,0 +1,650 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FA7F08;
+}
+
+.nav {
+    background-color: #F24405;
+    height: 80px;
+    color: white; 
+}
+
+.nav__container {
+
+        display: flex;
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+}
+
+
+.nav__logo__div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav__img__logo {
+    width: 10rem;
+    margin-top: 1.7rem;
+}
+
+.nav__logo {
+            font-size: 1.5em;
+            font-weight: 900;
+        }
+
+
+.nav__menu {
+            display: grid;
+            grid-auto-flow: column;
+            gap: 3em;}
+
+.nav__item {
+                color: white;
+                text-decoration: none;
+                --clippy: polygon(0 1%, 0 0, 0 100%, 0 100%);
+            }
+
+
+.nav__item:after {
+                    content: "";
+                    display: block;
+                    background: white;
+                    width: 90%;
+                    margin-top: 3px;
+                    height: 3px;
+                    clip-path: var(--clippy);
+                    transition: clip-path .5s;
+                }
+
+.nav__item:hover {
+    --clippy: polygon(0 1%, 100% 0, 100% 100%, 0 100%);
+
+                }
+
+.nav__input:checked + .nav__menu{
+	background: blue;
+}
+
+.nav__label{
+    display: none;
+}
+.nav__input {
+            display: none;
+    
+        }
+
+
+.header {
+    background-color:#FA7F08;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;      
+
+        
+        
+}
+.parrafoIndex{
+    width: 80%;
+}
+.contenedor__h1 {
+    background-color: #a2cbdb88;
+    align-self: center;
+    height: 20vh;
+    display: flex;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.header__titulo {
+font-size: 3rem;
+align-self: center;
+align-self: center;
+padding: 0 2rem;
+}
+
+.header__fondo {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 40vh;
+    display: flex;
+}
+
+.footer {
+    background-color: #F24405;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0 0 1rem 0;
+}
+
+.footer__contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 0 3rem;
+    color: white;
+
+    
+}
+.footer__contacto--titulo {
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+    color:blue;
+}
+
+.footer__contacto--lista {
+    list-style-type:none;
+}
+
+.footer__contacto--li {
+    margin: 15px 0 0 0;
+}
+
+.footer__contacto--enlace {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__redes {
+    display: flex;
+    flex-direction:column;
+    margin: 50px 50px 0 0;
+    align-items: center;
+    
+    color: rgb(255, 255, 255);
+
+    
+    
+}
+.footer__redes--parrafo {
+    margin: 3rem 0 3rem 0;
+}
+
+.footer__redes--logos {
+    display: flex;
+    flex-direction:row;
+}
+
+.footer__redes--enlace {
+    color: white;
+    text-decoration: none;
+
+    
+}
+.fa-facebook-square {
+    font-size: 40px;
+    color: #3b5998;
+    margin-right: 30px;
+}
+
+.fa-instagram {
+    font-size: 40px;
+    color:#E1306C ;
+    margin-right: 30px;
+}
+
+.fa-twitter {
+    font-size: 40px;
+    color: #00acee;
+    margin-right: 30px;
+}
+
+.fa-linkedin-in {
+    font-size: 40px;
+    color: #2867B2;
+    margin-right: 30px;
+}
+.footer__logo {
+    display: flex;
+    flex-direction:column;
+    align-self: center;
+}
+
+.footer__logo--img {
+    width: 150px;
+    height: 150px;
+    border-radius: 150%;
+}
+
+.article__titulos {
+    width: 100%;
+    height: 12rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#FA7F08;
+}
+
+.banner1 {
+    width: 100%;
+}
+
+.banner2 {
+    width: 100%;
+}
+.perros{
+    grid-area: perro;
+   
+}
+
+.gatos{
+    grid-area:gato;
+}
+
+
+ .tips{
+    grid-area: tips;
+ }
+ .v1{
+    grid-area: v1;
+
+ }
+.v2{
+    grid-area:v2
+}
+
+footer{
+    border-top:outset;
+    border-color: rgb(252, 71, 0);
+    border-style: outset;
+    
+}
+
+.presentacion{
+    width: 100%;
+}
+.opcionesdepago{
+    width: 100%;
+} 
+
+
+
+.formulario{
+    
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+
+ /* nosotros */
+.telefono{
+    width: 10%;
+    height: 10%;
+}
+.ubicacion{
+    width: 10%;
+    height: 10%;
+}
+.reloj{
+    width: 10%;
+    height: 10%;
+}
+.instagram{
+    width: 10%;
+    height: 10%;
+}
+.tienda1{
+    width: 200px;
+    height: 200px;
+}
+.tienda2{
+    width: 200px;
+    height: 200px;
+}
+.tienda3{
+    width: 200px;
+    height: 200px;
+}
+
+#tablas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FA7F08;
+    margin: 2rem 0;
+}
+
+.perros{
+    margin: 1rem 0;
+}
+.sectionIndex{
+    background-color: #FA7F08;
+}
+#videos{
+    display: flex;
+    flex-direction: column;
+    background-color: #FA7F08;
+    align-items: center;
+}
+.v1{
+    width: 90%;
+    margin: 0 0 1rem 0;
+}
+.v2{
+    width: 90%;
+}
+
+.catDog{
+    width: 100%;
+    height: 20vh;
+}
+
+/* Phone landscape + portrait (iphone x) */
+@media (min-width: 321px) and (max-width: 480px) {
+    .catDog{
+        height: 10vh;
+    }
+.header {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;      
+
+        
+
+        
+}
+.contenedor__h1 {
+    background-color: #a2cbdb88;
+    align-self: center;
+    height: 20vh;
+    display: flex;
+    width: 90vw;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+}
+
+.header__titulo {
+font-size: 3.5rem;
+padding-left: .5rem;
+}
+
+.header__fondo {
+    background-image: url(../media/boysLearning-min.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+}
+
+
+
+.nav {
+    background-color: #293241;
+    height: 80px;
+    color: white; 
+    width: 100vw;
+}
+
+.nav__logo {
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+
+.nav__img {
+    width: 5.5rem;
+}
+
+.nav__label {
+	display: block;
+	cursor: pointer;
+}
+
+.nav__item {
+    font-size: 2rem;
+}
+
+.nav__item:after {
+                    content: "";
+                    display: block;
+                    background: white;
+                    width: 90%;
+                    margin-top: 3px;
+                    height: 3px;
+                    clip-path: var(--clippy);
+                    transition: clip-path .5s;
+                }
+
+.nav__item:hover {
+    --clippy: polygon(0 1%, 100% 0, 100% 100%, 0 100%);
+
+                }
+
+
+.nav__menu {
+	position: fixed;
+	top: 80px;
+	bottom: 0;
+	background: blue;
+	width: 100vw;
+	left: 0;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+	clip-path: circle(0 at center);
+	transition: clip-path 1s ease-in-out;
+    margin:0 ;
+    height: 90vh;
+}
+
+
+
+.nav__input:checked + .nav__menu {
+	clip-path: circle(90% at center);
+}
+
+
+}
+
+/* Small tablet portrait con aprox 800 de Height */
+@media (min-width: 481px) and (max-width: 600px) {
+
+.header {
+    background-color:blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;      
+
+        
+
+        
+}
+
+.contenedor__h1 {
+    background-color: #a2cbdb88;
+    align-self: center;
+    height: 20vh;
+    display: flex;
+    width: 90vw;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+}
+
+.header__titulo {
+font-size: 4.5rem;
+padding-left: .5rem;
+}
+
+.header__fondo {
+    background-image: url(../media/boysLearning-min.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 85vh;
+    display: flex;
+}
+
+
+.nav {
+    background-color: #293241;
+    height: 100px;
+    color: white; 
+    width: 100vw;
+}
+
+.nav__logo {
+            font-size: 3rem;
+            font-weight: 900;
+        }
+
+.nav__img {
+    width: 6.5rem;
+}
+
+.nav__label {
+	display: block;
+	cursor: pointer;
+}
+
+.nav__item {
+    font-size: 1.5rem;
+}
+
+.nav__menu {
+	position: fixed;
+	top:100px;
+	bottom: 0;
+	background: blue;
+	width: 100vw;
+	left: 0;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+	clip-path: circle(0 at center);
+	transition: clip-path 1s ease-in-out;
+    margin:0 ;
+}
+
+
+
+.nav__input:checked + .nav__menu {
+	clip-path: circle(90% at center);
+}
+
+
+}
+
+/* Large tablet portrait (ipad con 1024 de H) */
+@media (min-width: 601px) and (max-width: 770px) {
+
+.header {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;      
+
+        
+        
+}
+.contenedor__h1 {
+    background-color: #a2cbdb88;
+    align-self: center;
+    height: 20vh;
+    display: flex;
+    width: 90vw;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+}
+
+.header__titulo {
+font-size: 3.5rem;
+padding-left: .5rem;
+}
+
+.header__fondo {
+    background-image: url(../media/boysLearning-min.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 90vh;
+    display: flex;
+}
+
+
+
+
+.nav {
+    background-color: #293241;
+    height: 125px;
+    color: white; 
+    width: 100vw;
+}
+
+.nav__logo {
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+
+.nav__img {
+    width: 5.5rem;
+}
+
+.nav__label {
+	display: block;
+	cursor: pointer;
+}
+
+.nav__item {
+    font-size: 1.5rem;
+}
+
+.nav__menu {
+	position: fixed;
+	top: 125px;
+	bottom: 0;
+	background: blue;
+	width: 100vw;
+	left: 0;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+	clip-path: circle(0 at center);
+	transition: clip-path 1s ease-in-out;
+    margin:0 ;
+}
+
+
+
+.nav__input:checked + .nav__menu {
+	clip-path: circle(90% at center);
+}
+#tablas{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: auto;
+    gap: 250px;
+    grid-template-areas: 
+    "perro  gato";
+    
+}
+#videos{ 
+    display: grid;
+   grid-template-columns: auto auto;
+   grid-template-rows:auto auto;
+   gap: 1%;
+   grid-template-areas:
+   "tips tips" 
+   "v1 v2";
+}
+
+}
